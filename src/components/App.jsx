@@ -9,14 +9,10 @@ const App = () => (
         <IoMdPlanet />
       </div>
     </div>
-    <div className="hgroup">
-      {/* <h1>{name}</h1> */}
-      {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Itaque reiciendis impedit atque. Esse culpa officia at quas, neque dolor eos!
-        </p> */}
-    </div>
     <Translator />
+    <footer>
+      <a href="https://judecodes.netlify.com" target="_blank" rel="noopener noreferrer">Judecodes</a>
+    </footer>
   </div>
 );
 

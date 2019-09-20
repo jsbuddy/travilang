@@ -13,7 +13,7 @@ const Translator = () => {
   const [to, setTo] = useState({ language: 'fr', text: '' });
   const [translating, setTranslating] = useState(false);
   const [languages, setLanguages] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
   const [timeout, fromEl] = [useRef(), useRef()];
 
@@ -65,7 +65,7 @@ const Translator = () => {
     <>
       {
         loading
-          ? 'Loading..'
+          ? <div className="loading">Loading..</div>
           : (
             <div className="translator-wrap">
               <div className="from">

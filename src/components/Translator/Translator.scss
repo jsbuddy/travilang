@@ -40,6 +40,9 @@
       border: 0;
       background: transparent;
       resize: none;
+      @media (max-width: 800px) {
+        font-size: 1.4rem;
+      }
     }
   }
   .to {
@@ -73,4 +76,10 @@
   //   height: 35px;
   border-radius: 4px;
   background: rgba(127, 255, 212, 0.191);
+}
+
+.loading {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
 }
