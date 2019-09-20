@@ -1,0 +1,69 @@
+.translator-wrap {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 30px 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  .from {
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .from,
+  .to {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    .top {
+      padding: 0rem 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 60px;
+      select {
+        background: #eee;
+        padding: 0.5rem 0.7rem;
+        border: 0;
+        border-radius: 4px;
+      }
+    }
+    textarea {
+      padding: 2rem 1.6rem 1.6rem;
+      font-size: 1.7rem;
+      height: 200px;
+      border: 0;
+      background: transparent;
+      resize: none;
+    }
+  }
+  .to {
+    background: #f9f9f9;
+  }
+}
+
+.btn-copy {
+  border: 0;
+  padding: 7px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  &:hover {
+    background: rgba(230, 234, 255, 0.7);
+  }
+}
+
+.copy-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px 5px;
+  font-size: 0.9rem;
+  //   height: 35px;
+  border-radius: 4px;
+  background: rgba(127, 255, 212, 0.191);
+}

@@ -12,6 +12,16 @@ html {
   font-size: 16px;
 }
 
+body {
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #191654, #43c6ac); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .hgroup {
   max-width: 600px;
   h1 {
@@ -28,4 +38,21 @@ html {
   padding: 1rem;
   max-width: 1000px;
   margin: 30px auto;
+}
+
+.logo-wrap {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
