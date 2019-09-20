@@ -35,9 +35,9 @@ body {
 }
 
 .container {
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .logo-wrap {
@@ -45,7 +45,13 @@ body {
   color: #fff;
   text-align: center;
   width: 100%;
-  margin-bottom: 50px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 800px) {
+    height: 100px;
+  }
   .logo {
     width: 40px;
     height: 40px;
